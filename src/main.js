@@ -8,10 +8,13 @@ import './assets/styles/reset.css'
 // 解决移动端边框问题
 import './assets/styles/border.css'
 import './assets/styles/iconfont.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false
 // 解决移动端点击事件延迟 300ms
 fastClick.attach(document.body)
+Vue.use(VueAwesomeSwiper)
 
 /* eslint-disable no-new */
 new Vue({
