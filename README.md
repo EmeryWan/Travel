@@ -2,20 +2,14 @@
 
 > A Vue.js project
 
-## Build Setup
+这是[慕课网课程](https://coding.imooc.com/class/chapter/203.html) 开发去哪儿网App中 Vue 学习内容的项目代码。
 
-``` bash
-# install dependencies
-npm install
+讲师 [Dell-Lee](http://www.dell-lee.com/)。
 
-# serve with hot reload at localhost:8080
-npm run dev
+## 运行
 
-# build for production with minification
-npm run build
+```shell
+npm install  /  yarn
 
-# build for production and view the bundle analyzer report
-npm run build --report
+npm run start  /  yarn start
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

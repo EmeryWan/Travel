@@ -7,16 +7,24 @@
       <span class="iconfont">&#xe632;</span>
       输入城市/景点/游玩主题
     </div>
-    <div class="header-right">
-      城市
-      <span class="iconfont arrow-icon">&#xe62d;</span>
-    </div>
+    <router-link to="/city">
+      <div class="header-right">
+        {{this.city}}
+        <span class="iconfont arrow-icon">&#xe62d;</span>
+      </div>
+    </router-link>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  computed: {
+    // 使用 mapState 辅助函数 以及 对象展开运算符 ...
+    // 将对象混入到外部对象中
+    ...mapState(['city'])
+  }
 }
 </script>
 
@@ -48,9 +56,11 @@ export default {
       border-radius .1rem
       color #ccc
     .header-right
-      width 1.24rem
+      min-width 1.04rem
+      padding 0 .1rem
       float right
       text-align center
+      color #fff
       .arrow-icon
         margin-left -0.04rem
         font-size .24rem
